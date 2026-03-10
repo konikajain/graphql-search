@@ -1,0 +1,33 @@
+export const USERS = Array.from({ length: 100 }, (_, i) => ({
+    id:         i + 1,
+    name:       ['Alice Johnson', 'Bob Smith', 'Carol White', 'David Lee',
+                 'Emma Davis', 'Frank Wilson', 'Grace Kim', 'Henry Brown',
+                 'Isabel Clark', 'James Taylor'][i % 10],
+    email:      `user${i + 1}@example.com`,
+    avatar:     `https://i.pravatar.cc/40?img=${(i % 70) + 1}`,
+    role:       ['Engineer', 'Designer', 'PM', 'Analyst', 'Manager'][i % 5],
+    department: ['Engineering', 'Design', 'Product', 'Marketing', 'Sales'][i % 5],
+    location:   ['San Francisco', 'New York', 'London', 'Bangalore', 'Berlin'][i % 5],
+    salary:     50000 + (i * 1500),
+    createdAt:  `2022-0${(i % 9) + 1}-${String((i % 28) + 1).padStart(2, '0')}`,
+    updatedAt:  `2024-0${(i % 9) + 1}-${String((i % 28) + 1).padStart(2, '0')}`,
+    isActive:   i % 3 !== 0,
+    phone:      `+1-555-${String(1000 + i).slice(1)}`,
+    address:    `${100 + i} Main St`,
+  }))
+  
+  export const ALL_FIELDS = [
+    { name: 'id',         size: 8,   always: true  },
+    { name: 'name',       size: 20,  always: false },
+    { name: 'email',      size: 28,  always: false },
+    { name: 'role',       size: 12,  always: false },
+    { name: 'department', size: 16,  always: false },
+    { name: 'location',   size: 18,  always: false },
+    { name: 'avatar',     size: 45,  always: false },
+    { name: 'salary',     size: 10,  always: false },
+    { name: 'phone',      size: 16,  always: false },
+    { name: 'address',    size: 24,  always: false },
+    { name: 'createdAt',  size: 24,  always: false },
+    { name: 'updatedAt',  size: 24,  always: false },
+    { name: 'isActive',   size: 8,   always: false },
+  ]
