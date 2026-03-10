@@ -10,7 +10,7 @@ Live Demo → [graphql-search.vercel.app](https://graphql-search-kappa.vercel.ap
 ## Why I built this
 
 At Raja Software Labs I migrated REST APIs to GraphQL, reducing API load
-time by 15%. This project shows exactly why that migration mattered —
+time. This project shows exactly why that migration mattered —
 with real network requests you can verify in DevTools.
 
 ---
