@@ -3,7 +3,7 @@
 A live demonstration of GraphQL over-fetching elimination — real API calls,
 real payload size differences, real response times.
 
-Live Demo → [your-url.vercel.app](https://graphql-search-kappa.vercel.app/)
+Live Demo → [graphql-search.vercel.app](https://graphql-search-kappa.vercel.app/)
 
 ---
 
